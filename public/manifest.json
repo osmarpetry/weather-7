@@ -1,21 +1,45 @@
 {
-  "name": "Yan Store",
-  "short_name": "Yan Store",
+  "id": "/",
+  "name": "Weather 7",
+  "short_name": "Weather 7",
+  "description": "A cinematic weather observatory powered by the National Weather Service.",
+  "lang": "en-US",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#08101e",
+  "theme_color": "#143a62",
   "icons": [
     {
-      "src": "/img/icon-192.png",
+      "src": "/icons/favicon-32.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "32x32"
     },
     {
-      "src": "/img/icon-512.png",
+      "src": "/icons/apple-touch-icon.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "180x180",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-384.png",
+      "type": "image/png",
+      "sizes": "384x384",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
     }
   ],
-  "background_color": "#E18F4E",
-  "description": "Yan Store",
-  "display": "fullscreen",
-  "start_url": "/",
-  "theme_color": "##FFA754"
+  "categories": ["weather", "utilities", "productivity"]
 }

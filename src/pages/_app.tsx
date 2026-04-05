@@ -8,13 +8,19 @@ function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>Yan</title>
-        <link rel="shortcut icon" href="/img/icon-512.png" />
-        <link rel="apple-touch-icon" href="/img/icon-512.png" />
+        <title>Weather Observatory</title>
+        <link rel="icon" type="image/svg+xml" href="/icons/icon.svg" />
+        <link rel="icon" sizes="32x32" href="/icons/favicon-32.png" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/icons/apple-touch-icon.png"
+        />
         <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#143a62" />
         <meta
           name="description"
-          content="A simple project starter to work with TypeScript, React, NextJS and Styled Components"
+          content="A cinematic weather observatory powered by the National Weather Service."
         />
       </Head>
       <GlobalStyles />

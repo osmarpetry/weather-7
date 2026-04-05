@@ -1,55 +1,117 @@
-This is a [Next.js](https://nextjs.org/) boilerplate created based in [this boilerplate](https://nextjs.org/docs/api-reference/create-next-app)
+# Weather 7
 
-This project uses lot of stuff as:
+An unfinished cinematic weather dashboard I started in 2023 and recently documented properly.
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [NextJS](https://nextjs.org/)
-- [Styled Components](https://styled-components.com/)
-- [Jest](https://jestjs.io/)
-- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro)
-- [Storybook](https://storybook.js.org/)
-- [Eslint](https://eslint.org/)
-- [Prettier](https://prettier.io/)
-- [Husky](https://github.com/typicode/husky)
+I started this as a personal weather interface experiment on `2023-02-05`, got it close by `2023-02-09`, and then left it unfinished for a long time. I came back on `2026-04-02` to close out the last documentation and verification pass without pretending this repo suddenly became a polished product.
 
-## Getting Started
+> I started this project a few years ago and never fully finished it. I used agents to help me close out this last stretch and tighten the docs/testing pass, but the direction, implementation choices, and final review are still mine.
 
-First, run the development server:
+## Status
 
-```bash
-npm run dev
-# or
-yarn dev
+The core app runs, builds, and is documented. It is still better described as unfinished work that now has a clean README than as a production-ready release.
+
+## What The App Does
+
+- Accepts U.S. city names, ZIP codes, street addresses, and raw coordinates as search input.
+- Resolves locations server-side with the U.S. Census Geocoder and falls back to Open-Meteo when needed.
+- Pulls forecast data, current conditions, and active alerts from the National Weather Service API.
+- Renders the result as a dashboard with current conditions, solar arc, hourly rhythm, outlook board, and observation deck sections.
+
+## Stack
+
+- Next.js 13
+- TypeScript
+- React 18
+- Styled Components
+- SWR
+- Bun test
+- React Testing Library
+- Storybook
+
+## How It Works
+
+The main page in `src/pages/index.tsx` manages the search input and calls `/api/weather` through the client helper in `src/api/index.ts`. The API route in `src/pages/api/weather.ts` validates the request and delegates the actual weather lookup to `src/lib/weather.ts`.
+
+That service layer resolves the location, fetches forecast and observation data, normalizes alerts, and returns a single response object. The response contract is defined in `src/types/weather.ts`, and `src/components/WeatherDashboard/` composes the current dashboard from section-level presentational components with matching Storybook stories.
+
+## Project Structure
+
+```text
+.
+├── .github/workflows/ci.yml
+├── .storybook/
+├── src/
+│   ├── components/
+│   │   └── WeatherDashboard/
+│   │       ├── sections/
+│   │       ├── __tests__/
+│   │       ├── fixtures.ts
+│   │       └── index.tsx
+│   ├── lib/weather.ts
+│   ├── pages/
+│   │   ├── api/weather.ts
+│   │   └── index.tsx
+│   └── types/weather.ts
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Running It Locally
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```bash
+bun install
+bun run dev
+bun run generate
+bun run lint
+bun run type-check
+bun run test:ci
+bun run build
+```
 
-## Commands
+The repo is now aligned around `bun` for local installs, script execution, and CI.
 
-- `dev`: runs your application on `localhost:3000`
-- `build`: creates the production build version
-- `start`: starts a simple server with the build production code
-- `lint`: runs the linter in all components and pages
-- `type-check`: runs typescript type check
-- `generate`: generate component files with plop
-- `test`: runs jest to test all components and pages
-- `test:watch`: runs jest in watch mode
-- `storybook`: runs storybook on `localhost:6006`
-- `build-storybook`: create the build version of storybook
+## Scaffolding
 
-## Learn More
+Use the generator when you want to scaffold a new component with styles, story, and test files:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+bun run generate
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+If you prefer the shell wrapper directly, it is still available at `generators/bash.sh`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Optional Environment Variable
 
-## Deploy on Vercel
+You can optionally set a custom National Weather Service user agent header in `.env.local`:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+NWS_USER_AGENT="weather-7/1.0 (https://your-app.example; you@example.com)"
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This only changes the request header sent to the National Weather Service API.
+
+## Verification
+
+On `2026-04-05`, I verified this workspace successfully with:
+
+- `bun run lint`
+- `bun run type-check`
+- `bun run test:ci`
+- `bun run build`
+- `bun run build-storybook`
+
+The current automated coverage is now centered on `src/components/WeatherDashboard`, including the composed page plus alert, outlook, and observation section fallbacks. There is still no Playwright, Cypress, or other end-to-end test suite in this repo right now.
+
+## What’s Still Incomplete
+
+- There is no end-to-end coverage for the actual search and dashboard experience.
+- There are no focused automated tests for `src/lib/weather.ts`.
+- There are no focused automated tests for `src/pages/api/weather.ts`.
+
+## What I’d Change Next
+
+1. Add end-to-end coverage for city, ZIP code, street address, raw coordinate, and error-state searches.
+2. Add service-layer and API-route tests around `src/lib/weather.ts` and `src/pages/api/weather.ts`.
+3. Add focused integration coverage around the `useSWR` search flow in `src/pages/index.tsx`.
+4. Revisit heavier framework upgrades like Next, Storybook, and TypeScript in one dedicated pass instead of mixing them into UI work.
+
+I’m keeping this here as a real snapshot of the project: working, documented, and still a little unfinished.

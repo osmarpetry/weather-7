@@ -1,35 +1,61 @@
-import { useState } from 'react'
-import Week from 'components/Forecast/Week'
-import AddressForm from 'components/Forecast/AddressForm'
-import { getWeatherFunc } from 'api'
+import { FormEvent, useState, useTransition } from 'react'
+import Head from 'next/head'
+import useSWR from 'swr'
+
+import WeatherDashboard from 'components/WeatherDashboard'
+import { DEFAULT_LOCATION, getWeather } from 'api'
 
 export default function Home() {
-  const [address, setAddress] = useState('')
-  const [forecast, setForecast] = useState([])
+  const [searchValue, setSearchValue] = useState(DEFAULT_LOCATION)
+  const [query, setQuery] = useState(DEFAULT_LOCATION)
+  const [isPending, startTransition] = useTransition()
 
-  const handleAddressChange = (address: string) => {
-    setAddress(address)
-  }
+  const { data, error, isLoading, isValidating, mutate } = useSWR(
+    query ? ['weather', query] : null,
+    ([, nextQuery]) => getWeather(nextQuery),
+    {
+      revalidateOnFocus: false,
+      keepPreviousData: true
+    }
+  )
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    setForecast(await getWeatherFunc(address))
+
+    const nextQuery = searchValue.trim()
+
+    if (!nextQuery) {
+      return
+    }
+
+    if (nextQuery === query) {
+      void mutate()
+      return
+    }
+
+    startTransition(() => {
+      setQuery(nextQuery)
+    })
   }
 
   return (
-    <main
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center'
-      }}
-    >
-      <AddressForm
-        address={address}
-        handleAddressChange={handleAddressChange}
-        handleSubmit={handleSubmit}
+    <>
+      <Head>
+        <title>Weather Observatory</title>
+        <meta
+          name="description"
+          content="A cinematic weather observatory built on the National Weather Service API."
+        />
+      </Head>
+
+      <WeatherDashboard
+        data={data}
+        searchValue={searchValue}
+        onSearchChange={setSearchValue}
+        onSubmit={handleSubmit}
+        isLoading={isLoading || isValidating || isPending}
+        errorMessage={error instanceof Error ? error.message : null}
       />
-      {forecast?.length > 0 ? <Week forecast={forecast} /> : null}
-    </main>
+    </>
   )
 }
