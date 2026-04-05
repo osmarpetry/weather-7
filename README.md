@@ -69,6 +69,16 @@ bun run build
 
 The repo is now aligned around `bun` for local installs, script execution, and CI.
 
+## Netlify
+
+The repository includes [netlify.toml](/Users/osmarpetry/workspace/gh/weather-7/netlify.toml) and [.nvmrc](/Users/osmarpetry/workspace/gh/weather-7/.nvmrc) so Netlify can build this Next.js app with Node 20 and Bun 1.3.10.
+
+If the Netlify UI still has an older build command saved, clear it or change it to:
+
+```bash
+bun install --frozen-lockfile && bun run build
+```
+
 ## Scaffolding
 
 Use the generator when you want to scaffold a new component with styles, story, and test files:

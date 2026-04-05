@@ -2,7 +2,6 @@
   "name": "weather-7",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "bun@1.3.10",
   "scripts": {
     "dev": "next dev",
     "build": "bun scripts/generate-pwa-icons.mjs && next build",
