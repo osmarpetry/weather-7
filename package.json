@@ -60,7 +60,7 @@
     "lint-staged": "17.4.1",
     "plop": "^4.0.1",
     "prettier": "2.8.3",
-    "typescript": "4.9.5",
+    "typescript": "5.9.3",
     "globals": "^17.12.0"
   }
 }

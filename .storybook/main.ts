@@ -17,6 +17,12 @@ const config = {
   },
   docs: {
     autodocs: true
+  },
+  // react-docgen-typescript-plugin calls removed TS compiler APIs (ts.createIdentifier etc.)
+  // on TypeScript >=5. Switch docgen to the babel-based implementation instead of upgrading
+  // Storybook (out of scope for this dependency bump).
+  typescript: {
+    reactDocgen: 'react-docgen'
   }
 }
 
