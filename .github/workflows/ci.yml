@@ -48,8 +48,9 @@ jobs:
 
   dependabot:
     needs: [build]
-    if: github.event.pull_request.user.login == 'dependabot[bot]'
+    if: github.actor == 'dependabot[bot]'
     permissions:
       contents: write
       pull-requests: write
+      workflows: write # Add this line
     uses: osmarpetry/.github/.github/workflows/dependabot-automerge.yml@main
