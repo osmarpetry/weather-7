@@ -7,6 +7,11 @@ const config = {
   core: {
     builder: '@storybook/builder-webpack5'
   },
+  babel: async (options) => ({
+    ...options,
+    babelrc: false,
+    configFile: false
+  }),
   webpackFinal: async (config: Configuration) => {
     config.resolve = config.resolve || {}
     config.resolve.modules = [

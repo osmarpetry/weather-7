@@ -1,9 +1,6 @@
-const { afterEach, expect } = require('bun:test')
-const { cleanup } = require('@testing-library/react')
-const matchers = require('@testing-library/jest-dom/matchers')
+import { afterEach, expect } from 'vitest'
+import { cleanup } from '@testing-library/react'
+import matchers from '@testing-library/jest-dom/matchers'
 
 expect.extend(matchers)
-
-afterEach(() => {
-  cleanup()
-})
+afterEach(cleanup)

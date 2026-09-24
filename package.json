@@ -2,28 +2,27 @@
   "name": "weather-7",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "pnpm@12.4.1",
   "scripts": {
     "dev": "next dev",
-    "build": "bun scripts/generate-pwa-icons.mjs && next build",
+    "build": "node scripts/generate-pwa-icons.mjs && next build",
     "start": "next start",
     "generate": "plop --plopfile generators/plopfile.js",
     "lint": "eslint src --max-warnings=0",
     "prettier": "prettier --write \"./**/*.{ts,tsx,js,jsx,json}\"",
     "type-check": "tsc --noEmit",
-    "test": "bun test",
-    "test:ci": "bun test --coverage",
+    "test": "vitest run",
+    "test:ci": "vitest run --coverage",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
-    "prepare": "husky install"
+    "build-storybook": "build-storybook"
   },
   "engines": {
-    "node": ">=18.18.0",
-    "bun": ">=1.3.10"
+    "node": ">=26 <27"
   },
   "lint-staged": {
     "src/**/*": [
-      "bunx eslint --fix --max-warnings=0",
-      "bunx prettier --write"
+      "pnpm exec eslint --fix --max-warnings=0",
+      "pnpm exec prettier --write"
     ]
   },
   "dependencies": {
@@ -49,6 +48,7 @@
     "@types/react": "18.0.27",
     "@typescript-eslint/eslint-plugin": "^8.70.1",
     "@typescript-eslint/parser": "^8.70.1",
+    "@vitest/coverage-v8": "4.1.11",
     "babel-loader": "10.1.1",
     "babel-plugin-styled-components": "2.3.0",
     "eslint": "^9.39.5",
@@ -63,6 +63,8 @@
     "lint-staged": "17.5.1",
     "plop": "^4.0.5",
     "prettier": "3.9.9",
-    "typescript": "4.9.5"
+    "typescript": "4.9.5",
+    "vite-tsconfig-paths": "^6.1.1",
+    "vitest": "4.1.11"
   }
 }
