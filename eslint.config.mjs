@@ -10,7 +10,7 @@ const compat = new FlatCompat({
 
 export default defineConfig([
   ...fixupConfigRules(
-    compat.extends('next/core-web-vitals', 'next/typescript')
+    compat.extends('next/core-web-vitals.js', 'next/typescript.js'),
   ),
   prettier,
   {

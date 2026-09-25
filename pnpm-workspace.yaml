@@ -7,3 +7,4 @@ allowBuilds:
   unrs-resolver: true
 overrides:
   webpack: 5.101.2
+  '@types/react': 19.3.0
