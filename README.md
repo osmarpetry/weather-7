@@ -24,7 +24,7 @@ The core app runs, builds, and is documented. It is still better described as un
 - React 18
 - Styled Components
 - SWR
-- Bun test
+- pnpm test
 - React Testing Library
 - Storybook
 
@@ -58,25 +58,25 @@ That service layer resolves the location, fetches forecast and observation data,
 ## Running It Locally
 
 ```bash
-bun install
-bun run dev
-bun run generate
-bun run lint
-bun run type-check
-bun run test:ci
-bun run build
+pnpm install
+pnpm run dev
+pnpm run generate
+pnpm run lint
+pnpm run type-check
+pnpm run test:ci
+pnpm run build
 ```
 
-The repo is now aligned around `bun` for local installs, script execution, and CI.
+The repo is now aligned around `pnpm` for local installs, script execution, and CI.
 
 ## Netlify
 
-The repository includes [netlify.toml](/Users/osmarpetry/workspace/gh/weather-7/netlify.toml) and [.nvmrc](/Users/osmarpetry/workspace/gh/weather-7/.nvmrc) so Netlify can build this Next.js app with Node 20 and Bun 1.3.10.
+The repository includes [netlify.toml](/Users/osmarpetry/workspace/gh/weather-7/netlify.toml) and [.nvmrc](/Users/osmarpetry/workspace/gh/weather-7/.nvmrc) so Netlify can build this Next.js app with Node 20 and pnpm 1.3.10.
 
 If the Netlify UI still has an older build command saved, clear it or change it to:
 
 ```bash
-bun install --frozen-lockfile && bun run build
+pnpm install --frozen-lockfile && pnpm run build
 ```
 
 ## Scaffolding
@@ -84,7 +84,7 @@ bun install --frozen-lockfile && bun run build
 Use the generator when you want to scaffold a new component with styles, story, and test files:
 
 ```bash
-bun run generate
+pnpm run generate
 ```
 
 If you prefer the shell wrapper directly, it is still available at `generators/bash.sh`.
@@ -103,11 +103,11 @@ This only changes the request header sent to the National Weather Service API.
 
 On `2026-04-05`, I verified this workspace successfully with:
 
-- `bun run lint`
-- `bun run type-check`
-- `bun run test:ci`
-- `bun run build`
-- `bun run build-storybook`
+- `pnpm run lint`
+- `pnpm run type-check`
+- `pnpm run test:ci`
+- `pnpm run build`
+- `pnpm run build-storybook`
 
 The current automated coverage is now centered on `src/components/WeatherDashboard`, including the composed page plus alert, outlook, and observation section fallbacks. There is still no Playwright, Cypress, or other end-to-end test suite in this repo right now.
 
