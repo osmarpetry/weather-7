@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react/types-6-0'
+import { Meta, StoryFn } from '@storybook/react/types-6-0'
 
 import {
   alertHeavyDashboardFixture,
@@ -19,7 +19,7 @@ export default {
   component: WeatherHighlightsCard
 } as Meta
 
-const Template: Story<WeatherHighlightsCardStoryProps> = (args) => {
+const Template: StoryFn<WeatherHighlightsCardStoryProps> = (args) => {
   const palette = useStoryPalette(
     args.alerts.length ? alertHeavyDashboardFixture : quietDashboardFixture
   )

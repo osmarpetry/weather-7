@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react/types-6-0'
+import { Meta, StoryFn } from '@storybook/react/types-6-0'
 
 import { dashboardFixture, mixedForecastFixture } from '../../fixtures'
 import { StoryFrame } from '../../StoryFrame'
@@ -13,7 +13,7 @@ export default {
   component: OutlookBoardCard
 } as Meta
 
-const Template: Story<OutlookBoardCardStoryProps> = (args) => {
+const Template: StoryFn<OutlookBoardCardStoryProps> = (args) => {
   const palette = useStoryPalette(
     args.daily === mixedForecastFixture.daily
       ? mixedForecastFixture

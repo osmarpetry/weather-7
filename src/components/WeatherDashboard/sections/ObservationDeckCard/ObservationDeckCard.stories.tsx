@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react/types-6-0'
+import { Meta, StoryFn } from '@storybook/react/types-6-0'
 
 import { dashboardFixture, partialObservationFixture } from '../../fixtures'
 import { StoryFrame } from '../../StoryFrame'
@@ -13,7 +13,7 @@ export default {
   component: ObservationDeckCard
 } as Meta
 
-const Template: Story<ObservationDeckCardStoryProps> = (args) => {
+const Template: StoryFn<ObservationDeckCardStoryProps> = (args) => {
   const palette = useStoryPalette(
     args.current === partialObservationFixture.current
       ? partialObservationFixture

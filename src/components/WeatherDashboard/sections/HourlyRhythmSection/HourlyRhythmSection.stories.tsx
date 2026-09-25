@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react/types-6-0'
+import { Meta, StoryFn } from '@storybook/react/types-6-0'
 
 import { dashboardFixture } from '../../fixtures'
 import { StoryFrame } from '../../StoryFrame'
@@ -13,7 +13,7 @@ export default {
   component: HourlyRhythmSection
 } as Meta
 
-const Template: Story<HourlyRhythmSectionStoryProps> = (args) => {
+const Template: StoryFn<HourlyRhythmSectionStoryProps> = (args) => {
   const palette = useStoryPalette(dashboardFixture)
 
   return (

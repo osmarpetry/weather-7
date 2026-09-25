@@ -22,11 +22,11 @@ export const globalTypes = {
 }
 
 export const decorators = [
-  (Story, context) => (
+  (StoryFn, context) => (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <DashboardStoryModeProvider mode={context.globals.weatherCanvasMode}>
-        <Story />
+        <StoryFn />
       </DashboardStoryModeProvider>
     </ThemeProvider>
   )
