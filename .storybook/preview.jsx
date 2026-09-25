@@ -1,7 +1,7 @@
 import { ThemeProvider } from 'styled-components'
-import GlobalStyles from 'styles/global'
-import theme from 'styles/theme'
-import { DashboardStoryModeProvider } from 'components/WeatherDashboard/storybook-mode'
+import GlobalStyles from '../src/styles/global'
+import theme from '../src/styles/theme'
+import { DashboardStoryModeProvider } from '../src/components/WeatherDashboard/storybook-mode'
 
 export const globalTypes = {
   weatherCanvasMode: {

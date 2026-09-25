@@ -1,11 +1,16 @@
 import type { Configuration } from 'webpack'
+import tsconfigPaths from 'vite-tsconfig-paths'
 
 const config = {
+  viteFinal: async (config) => {
+    config.plugins = [...(config.plugins ?? []), tsconfigPaths({ loose: true })]
+    return config
+  },
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   staticDirs: ['../public'],
   addons: ['@storybook/addon-docs'],
   framework: {
-    name: '@storybook/nextjs',
+    name: '@storybook/nextjs-vite',
     options: {}
   },
 

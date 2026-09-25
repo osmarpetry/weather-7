@@ -1,4 +1,4 @@
-import { Meta, StoryFn } from '@storybook/nextjs'
+import type { Meta, StoryFn } from '@storybook/react'
 
 import { dashboardFixture, mixedForecastFixture } from '../../fixtures'
 import { StoryFrame } from '../../StoryFrame'
