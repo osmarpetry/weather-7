@@ -127,6 +127,30 @@ act pull_request -n -W .github/workflows/ci.yml -j build \
   -P ubuntu-latest=catthehacker/ubuntu:act-latest
 ```
 
+Validate the Netlify build locally the same way, using Netlify's own public build image. The image only ships the OS and a Node version manager (`nvm`); it does not include the proprietary buildbot orchestrator that reads `netlify.toml`/`NODE_VERSION`, so the Node version and build command are driven by hand to match what's pinned there.
+
+```bash
+# Pull Netlify's published build image (matches the Ubuntu Focal buildbot).
+docker pull netlify/build:focal
+
+# Start a container with the repo mounted where Netlify mounts it.
+docker run --rm -d --name netlify-build-repro \
+  -v "$PWD":/opt/build/repo -w /opt/build/repo \
+  netlify/build:focal tail -f /dev/null
+
+# Run the pinned Node version and the exact build.command from netlify.toml.
+docker exec -u buildbot -w /opt/build/repo netlify-build-repro bash -lc '
+  export NVM_DIR=/opt/buildhome/.nvm
+  . "$NVM_DIR/nvm.sh"
+  nvm install 26.10.0 && nvm use 26.10.0
+  corepack disable && npm install -g pnpm@12.4.1 && pnpm run build
+'
+
+docker rm -f netlify-build-repro
+```
+
+This reproduced a real Netlify outage: Node 26 no longer bundles Corepack, so Netlify's buildbot installs its own copy, and the version it pins (`corepack@0.34.0`) cannot resolve pnpm 11+'s binary layout, failing with `Cannot find module '.../corepack/v1/pnpm/12.4.1/bin/pnpm.cjs'`. `corepack disable && npm install -g pnpm@12.4.1` in `build.command` sidesteps Corepack entirely and was confirmed against this local image before shipping.
+
 ## What’s Still Incomplete
 
 - There is no end-to-end coverage for the actual search and dashboard experience.
