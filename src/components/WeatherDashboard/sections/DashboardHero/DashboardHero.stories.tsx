@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react/types-6-0'
+import { Meta, StoryFn } from '@storybook/react/types-6-0'
 
 import { dashboardFixture } from '../../fixtures'
 import { StoryFrame } from '../../StoryFrame'
@@ -19,7 +19,7 @@ export default {
   component: DashboardHero
 } as Meta
 
-const Template: Story<DashboardHeroStoryProps> = (args) => {
+const Template: StoryFn<DashboardHeroStoryProps> = (args) => {
   const palette = useStoryPalette(dashboardFixture)
 
   return (

@@ -4,9 +4,11 @@ const config = {
   stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
   staticDirs: ['../public'],
   addons: ['@storybook/addon-essentials'],
-  core: {
-    builder: '@storybook/builder-webpack5'
+  framework: {
+    name: '@storybook/nextjs',
+    options: {}
   },
+
   babel: async (options) => ({
     ...options,
     babelrc: false,
@@ -20,9 +22,7 @@ const config = {
     ]
     return config
   },
-  docs: {
-    autodocs: true
-  }
+  docs: {}
 }
 
 module.exports = config

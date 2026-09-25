@@ -1,4 +1,4 @@
-import { Meta, Story } from '@storybook/react/types-6-0'
+import { Meta, StoryFn } from '@storybook/react/types-6-0'
 
 import WeatherDashboard, { WeatherDashboardProps } from '.'
 import { alertHeavyDashboardFixture, dashboardFixture } from './fixtures'
@@ -11,7 +11,7 @@ export default {
   }
 } as Meta
 
-const Template: Story<WeatherDashboardProps> = (args) => (
+const Template: StoryFn<WeatherDashboardProps> = (args) => (
   <WeatherDashboard {...args} />
 )
 
