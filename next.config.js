@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['api.weather.gov']
+    remotePatterns: [{ protocol: 'https', hostname: 'api.weather.gov' }]
   }
 }
 

@@ -1,12 +1,26 @@
 import type { Configuration } from 'webpack'
-import tsconfigPaths from 'vite-tsconfig-paths'
 
 const config = {
   viteFinal: async (config) => {
-    config.plugins = [...(config.plugins ?? []), tsconfigPaths({ loose: true })]
+    config.resolve = { ...config.resolve, tsconfigPaths: true }
+    config.build = {
+      ...config.build,
+      rolldownOptions: {
+        ...config.build?.rolldownOptions,
+        onLog(level, log, defaultHandler) {
+          if (
+            level === 'warn' &&
+            log.code === 'MODULE_LEVEL_DIRECTIVE' &&
+            (log.id?.includes('/node_modules/next/') ||
+              log.message?.includes('/node_modules/next/'))
+          ) return
+          defaultHandler(level, log)
+        }
+      }
+    }
     return config
   },
-  stories: ['../src/**/*.stories.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
+  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx)'],
   staticDirs: ['../public'],
   addons: ['@storybook/addon-docs'],
   framework: {

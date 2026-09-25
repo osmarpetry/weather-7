@@ -3,10 +3,11 @@ import nextVitals from 'eslint-config-next/core-web-vitals'
 import nextTs from 'eslint-config-next/typescript'
 import prettier from 'eslint-config-prettier/flat'
 import globals from 'globals'
+import { fixupConfigRules } from '@eslint/compat'
 
 export default defineConfig([
-  ...nextVitals,
-  ...nextTs,
+  ...fixupConfigRules(nextVitals),
+  ...fixupConfigRules(nextTs),
   prettier,
   {
     languageOptions: {
