@@ -14,8 +14,9 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "baseUrl": "src",
-    "incremental": true
+    "incremental": true,
+    "types": ["vitest/globals", "@testing-library/jest-dom"]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "vitest.config.ts"]
 }

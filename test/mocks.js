@@ -1,7 +1,7 @@
-const React = require('react')
-const { mock } = require('bun:test')
+import React from 'react'
+import { vi } from 'vitest'
 
-mock.module('next/image', () => ({
+vi.mock('next/image', () => ({
   __esModule: true,
   default: (props) => {
     const { unoptimized, priority, ...rest } = props

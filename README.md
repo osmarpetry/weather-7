@@ -24,7 +24,7 @@ The core app runs, builds, and is documented. It is still better described as un
 - React 18
 - Styled Components
 - SWR
-- Bun test
+- pnpm test
 - React Testing Library
 - Storybook
 
@@ -58,25 +58,25 @@ That service layer resolves the location, fetches forecast and observation data,
 ## Running It Locally
 
 ```bash
-bun install
-bun run dev
-bun run generate
-bun run lint
-bun run type-check
-bun run test:ci
-bun run build
+pnpm install
+pnpm run dev
+pnpm run generate
+pnpm run lint
+pnpm run type-check
+pnpm run test:ci
+pnpm run build
 ```
 
-The repo is now aligned around `bun` for local installs, script execution, and CI.
+The repo is now aligned around `pnpm` for local installs, script execution, and CI.
 
 ## Netlify
 
-The repository includes [netlify.toml](/Users/osmarpetry/workspace/gh/weather-7/netlify.toml) and [.nvmrc](/Users/osmarpetry/workspace/gh/weather-7/.nvmrc) so Netlify can build this Next.js app with Node 20 and Bun 1.3.10.
+The repository includes [netlify.toml](/Users/osmarpetry/workspace/gh/weather-7/netlify.toml) and [.nvmrc](/Users/osmarpetry/workspace/gh/weather-7/.nvmrc) so Netlify can build this Next.js app with Node 20 and pnpm 1.3.10.
 
 If the Netlify UI still has an older build command saved, clear it or change it to:
 
 ```bash
-bun install --frozen-lockfile && bun run build
+pnpm install --frozen-lockfile && pnpm run build
 ```
 
 ## Scaffolding
@@ -84,7 +84,7 @@ bun install --frozen-lockfile && bun run build
 Use the generator when you want to scaffold a new component with styles, story, and test files:
 
 ```bash
-bun run generate
+pnpm run generate
 ```
 
 If you prefer the shell wrapper directly, it is still available at `generators/bash.sh`.
@@ -103,13 +103,53 @@ This only changes the request header sent to the National Weather Service API.
 
 On `2026-04-05`, I verified this workspace successfully with:
 
-- `bun run lint`
-- `bun run type-check`
-- `bun run test:ci`
-- `bun run build`
-- `bun run build-storybook`
+- `pnpm run lint`
+- `pnpm run type-check`
+- `pnpm run test:ci`
+- `pnpm run build`
+- `pnpm run build-storybook`
 
 The current automated coverage is now centered on `src/components/WeatherDashboard`, including the composed page plus alert, outlook, and observation section fallbacks. There is still no Playwright, Cypress, or other end-to-end test suite in this repo right now.
+
+## How To Contribute
+
+Validate `.github/workflows/ci.yml` locally before opening a pull request.
+
+```bash
+# Workflow syntax check
+actionlint .github/workflows/ci.yml
+
+# Dry run: walks the job -> step sequence and prints what it would do, without
+# executing anything. Confirms the `build` job resolves and the step sequence
+# is well-formed. This workflow has a single job and no matrix, so there is no
+# leg to target.
+act pull_request -n -W .github/workflows/ci.yml -j build \
+  -P ubuntu-latest=catthehacker/ubuntu:act-latest
+```
+
+Validate the Netlify build locally the same way, using Netlify's own public build image. The image only ships the OS and a Node version manager (`nvm`); it does not include the proprietary buildbot orchestrator that reads `netlify.toml`/`NODE_VERSION`, so the Node version and build command are driven by hand to match what's pinned there.
+
+```bash
+# Pull Netlify's published build image (matches the Ubuntu Focal buildbot).
+docker pull netlify/build:focal
+
+# Start a container with the repo mounted where Netlify mounts it.
+docker run --rm -d --name netlify-build-repro \
+  -v "$PWD":/opt/build/repo -w /opt/build/repo \
+  netlify/build:focal tail -f /dev/null
+
+# Run the pinned Node version and the exact build.command from netlify.toml.
+docker exec -u buildbot -w /opt/build/repo netlify-build-repro bash -lc '
+  export NVM_DIR=/opt/buildhome/.nvm
+  . "$NVM_DIR/nvm.sh"
+  nvm install 26.10.0 && nvm use 26.10.0
+  corepack disable && npm install -g pnpm@12.4.1 && pnpm run build
+'
+
+docker rm -f netlify-build-repro
+```
+
+This reproduced a real Netlify outage: Node 26 no longer bundles Corepack, so Netlify's buildbot installs its own copy, and the version it pins (`corepack@0.34.0`) cannot resolve pnpm 11+'s binary layout, failing with `Cannot find module '.../corepack/v1/pnpm/12.4.1/bin/pnpm.cjs'`. `corepack disable && npm install -g pnpm@12.4.1` in `build.command` sidesteps Corepack entirely and was confirmed against this local image before shipping.
 
 ## What’s Still Incomplete
 
