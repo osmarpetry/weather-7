@@ -1,4 +1,4 @@
-import { Meta, StoryFn } from '@storybook/react/types-6-0'
+import { Meta, StoryFn } from '@storybook/nextjs'
 
 import WeatherDashboard, { WeatherDashboardProps } from '.'
 import { alertHeavyDashboardFixture, dashboardFixture } from './fixtures'
