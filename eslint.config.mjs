@@ -1,12 +1,17 @@
 import { defineConfig, globalIgnores } from 'eslint/config'
-import nextVitals from 'eslint-config-next/core-web-vitals'
-import nextTs from 'eslint-config-next/typescript'
 import prettier from 'eslint-config-prettier/flat'
 import globals from 'globals'
+import { FlatCompat } from '@eslint/eslintrc'
+import { fixupConfigRules } from '@eslint/compat'
+
+const compat = new FlatCompat({
+  baseDirectory: import.meta.dirname
+})
 
 export default defineConfig([
-  ...nextVitals,
-  ...nextTs,
+  ...fixupConfigRules(
+    compat.extends('next/core-web-vitals', 'next/typescript')
+  ),
   prettier,
   {
     languageOptions: {
