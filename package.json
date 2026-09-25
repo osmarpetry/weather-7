@@ -49,7 +49,7 @@
     "@typescript-eslint/eslint-plugin": "^8.70.1",
     "@typescript-eslint/parser": "^8.70.1",
     "@vitejs/plugin-react": "^6.1.1",
-    "@vitest/coverage-v8": "4.1.11",
+    "@vitest/coverage-v8": "5.0.1",
     "babel-loader": "10.1.1",
     "babel-plugin-styled-components": "2.3.0",
     "eslint": "^9.39.5",
@@ -66,6 +66,6 @@
     "prettier": "3.9.9",
     "typescript": "4.9.5",
     "vite-tsconfig-paths": "^6.1.1",
-    "vitest": "4.1.11"
+    "vitest": "5.0.1"
   }
 }
