@@ -111,6 +111,22 @@ On `2026-04-05`, I verified this workspace successfully with:
 
 The current automated coverage is now centered on `src/components/WeatherDashboard`, including the composed page plus alert, outlook, and observation section fallbacks. There is still no Playwright, Cypress, or other end-to-end test suite in this repo right now.
 
+## How To Contribute
+
+Validate `.github/workflows/ci.yml` locally before opening a pull request.
+
+```bash
+# Workflow syntax check
+actionlint .github/workflows/ci.yml
+
+# Dry run: walks the job -> step sequence and prints what it would do, without
+# executing anything. Confirms the `build` job resolves and the step sequence
+# is well-formed. This workflow has a single job and no matrix, so there is no
+# leg to target.
+act pull_request -n -W .github/workflows/ci.yml -j build \
+  -P ubuntu-latest=catthehacker/ubuntu:act-latest
+```
+
 ## What’s Still Incomplete
 
 - There is no end-to-end coverage for the actual search and dashboard experience.
