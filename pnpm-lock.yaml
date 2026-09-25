@@ -196,13 +196,13 @@ importers:
         version: 8.6.14(@types/react@18.0.27)(storybook@8.6.18(prettier@3.9.9)(supports-color@5.5.0))
       '@storybook/builder-webpack5':
         specifier: 6.5.16
-        version: 6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)(uglify-js@3.19.3)
+        version: 6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)(uglify-js@3.19.3)
       '@storybook/manager-webpack5':
         specifier: 6.5.16
-        version: 6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)(uglify-js@3.19.3)
+        version: 6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)(uglify-js@3.19.3)
       '@storybook/react':
         specifier: 6.5.16
-        version: 6.5.16(890714e7a58ca5ab760ec01eb65ff9bf)
+        version: 6.5.16(89f97b32f23290e871de11a923f36777)
       '@testing-library/dom':
         specifier: ^10.4.2
         version: 10.4.2
@@ -223,10 +223,10 @@ importers:
         version: 18.0.27
       '@typescript-eslint/eslint-plugin':
         specifier: ^8.70.1
-        version: 8.70.1(@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5))(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)
+        version: 8.70.1(@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3))(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)
       '@typescript-eslint/parser':
         specifier: ^8.70.1
-        version: 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)
+        version: 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)
       '@vitejs/plugin-react':
         specifier: ^6.1.1
         version: 6.1.1(vite@8.3.0(@types/node@18.11.18)(esbuild@0.25.12)(terser@5.51.2)(yaml@2.9.1))
@@ -244,7 +244,7 @@ importers:
         version: 9.39.5(supports-color@5.5.0)
       eslint-config-next:
         specifier: ^16.3.6
-        version: 16.3.6(@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5))(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)
+        version: 16.3.6(@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3))(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)
       eslint-config-prettier:
         specifier: ^10.1.8
         version: 10.1.8(eslint@9.39.5(supports-color@5.5.0))
@@ -259,7 +259,7 @@ importers:
         version: 7.1.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)
       eslint-plugin-storybook:
         specifier: ^10.6.0
-        version: 10.6.0(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)
+        version: 10.6.0(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)
       globals:
         specifier: ^17.12.0
         version: 17.12.0
@@ -276,11 +276,11 @@ importers:
         specifier: 3.9.9
         version: 3.9.9
       typescript:
-        specifier: 4.9.5
-        version: 4.9.5
+        specifier: 6.0.3
+        version: 6.0.3
       vite-tsconfig-paths:
         specifier: ^6.1.1
-        version: 6.1.1(supports-color@5.5.0)(typescript@4.9.5)(vite@8.3.0(@types/node@18.11.18)(esbuild@0.25.12)(terser@5.51.2)(yaml@2.9.1))
+        version: 6.1.1(supports-color@5.5.0)(typescript@6.0.3)(vite@8.3.0(@types/node@18.11.18)(esbuild@0.25.12)(terser@5.51.2)(yaml@2.9.1))
       vitest:
         specifier: 5.0.1
         version: 5.0.1(@types/node@18.11.18)(@vitest/coverage-v8@5.0.1)(happy-dom@20.14.5)(vite@8.3.0(@types/node@18.11.18)(esbuild@0.25.12)(terser@5.51.2)(yaml@2.9.1))
@@ -6997,9 +6997,9 @@ packages:
       eslint: ^8.57.0 || ^9.0.0 || ^10.0.0
       typescript: '>=4.8.4 <6.1.0'
 
-  typescript@4.9.5:
-    resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
-    engines: {node: '>=4.2.0'}
+  typescript@6.0.3:
+    resolution: {integrity: sha512-y2TvuxSZPDyQakkFRPZHKFm+KKVqIisdg9/CZwm9ftvKXLP8NRWj38/ODjNbr43SsoXqNuAisEf1GdCxqWcdBw==}
+    engines: {node: '>=14.17'}
     hasBin: true
 
   uglify-js@3.19.3:
@@ -9211,7 +9211,7 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  '@storybook/builder-webpack4@6.5.16(bluebird@3.7.2)(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)':
+  '@storybook/builder-webpack4@6.5.16(bluebird@3.7.2)(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)':
     dependencies:
       '@babel/core': 7.29.7(supports-color@5.5.0)
       '@storybook/addons': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -9221,7 +9221,7 @@ snapshots:
       '@storybook/client-api': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@storybook/client-logger': 6.5.16
       '@storybook/components': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@storybook/core-common': 6.5.16(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)
+      '@storybook/core-common': 6.5.16(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)
       '@storybook/core-events': 6.5.16
       '@storybook/node-logger': 6.5.16
       '@storybook/preview-web': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -9239,12 +9239,12 @@ snapshots:
       css-loader: 3.6.0(webpack@4.47.0(supports-color@5.5.0))
       file-loader: 6.2.0(webpack@4.47.0(supports-color@5.5.0))
       find-up: 5.0.0
-      fork-ts-checker-webpack-plugin: 4.1.6(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)(webpack@4.47.0(supports-color@5.5.0))
+      fork-ts-checker-webpack-plugin: 4.1.6(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)(webpack@4.47.0(supports-color@5.5.0))
       glob: 7.2.3
       glob-promise: 3.4.0(glob@7.2.3)
       global: 4.4.0
       html-webpack-plugin: 4.5.2(webpack@4.47.0(supports-color@5.5.0))
-      pnp-webpack-plugin: 1.6.4(typescript@4.9.5)
+      pnp-webpack-plugin: 1.6.4(typescript@6.0.3)
       postcss: 7.0.39
       postcss-flexbugs-fixes: 4.2.1
       postcss-loader: 4.3.0(postcss@7.0.39)(webpack@4.47.0(supports-color@5.5.0))
@@ -9263,7 +9263,7 @@ snapshots:
       webpack-hot-middleware: 2.26.1
       webpack-virtual-modules: 0.2.2(supports-color@5.5.0)
     optionalDependencies:
-      typescript: 4.9.5
+      typescript: 6.0.3
     transitivePeerDependencies:
       - bluebird
       - eslint
@@ -9272,7 +9272,7 @@ snapshots:
       - webpack-cli
       - webpack-command
 
-  '@storybook/builder-webpack5@6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)(uglify-js@3.19.3)':
+  '@storybook/builder-webpack5@6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)(uglify-js@3.19.3)':
     dependencies:
       '@babel/core': 7.29.7(supports-color@5.5.0)
       '@storybook/addons': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -9282,7 +9282,7 @@ snapshots:
       '@storybook/client-api': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@storybook/client-logger': 6.5.16
       '@storybook/components': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@storybook/core-common': 6.5.16(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)
+      '@storybook/core-common': 6.5.16(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)
       '@storybook/core-events': 6.5.16
       '@storybook/node-logger': 6.5.16
       '@storybook/preview-web': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -9297,7 +9297,7 @@ snapshots:
       case-sensitive-paths-webpack-plugin: 2.4.0
       core-js: 3.50.0
       css-loader: 5.2.7(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3))
-      fork-ts-checker-webpack-plugin: 6.5.3(eslint@9.39.5(supports-color@5.5.0))(typescript@4.9.5)(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3))
+      fork-ts-checker-webpack-plugin: 6.5.3(eslint@9.39.5(supports-color@5.5.0))(typescript@6.0.3)(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3))
       glob: 7.2.3
       glob-promise: 3.4.0(glob@7.2.3)
       html-webpack-plugin: 5.6.8(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3))
@@ -9315,7 +9315,7 @@ snapshots:
       webpack-hot-middleware: 2.26.1
       webpack-virtual-modules: 0.4.6
     optionalDependencies:
-      typescript: 4.9.5
+      typescript: 6.0.3
     transitivePeerDependencies:
       - '@minify-html/node'
       - '@napi-rs/image'
@@ -9407,7 +9407,7 @@ snapshots:
       regenerator-runtime: 0.13.11
       util-deprecate: 1.0.2
 
-  '@storybook/core-client@6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.9.5)(webpack@4.47.0(supports-color@5.5.0))':
+  '@storybook/core-client@6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@6.0.3)(webpack@4.47.0(supports-color@5.5.0))':
     dependencies:
       '@storybook/addons': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@storybook/channel-postmessage': 6.5.16
@@ -9433,9 +9433,9 @@ snapshots:
       util-deprecate: 1.0.2
       webpack: 4.47.0(supports-color@5.5.0)
     optionalDependencies:
-      typescript: 4.9.5
+      typescript: 6.0.3
 
-  '@storybook/core-client@6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.9.5)(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3))':
+  '@storybook/core-client@6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@6.0.3)(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3))':
     dependencies:
       '@storybook/addons': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@storybook/channel-postmessage': 6.5.16
@@ -9461,9 +9461,9 @@ snapshots:
       util-deprecate: 1.0.2
       webpack: 5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3)
     optionalDependencies:
-      typescript: 4.9.5
+      typescript: 6.0.3
 
-  '@storybook/core-common@6.5.16(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)':
+  '@storybook/core-common@6.5.16(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)':
     dependencies:
       '@babel/core': 7.29.7(supports-color@5.5.0)
       '@babel/plugin-proposal-class-properties': 7.18.6(@babel/core@7.29.7(supports-color@5.5.0))(supports-color@5.5.0)
@@ -9499,7 +9499,7 @@ snapshots:
       express: 4.22.3(supports-color@5.5.0)
       file-system-cache: 1.1.0
       find-up: 5.0.0
-      fork-ts-checker-webpack-plugin: 6.5.3(eslint@9.39.5(supports-color@5.5.0))(typescript@4.9.5)(webpack@4.47.0(supports-color@5.5.0))
+      fork-ts-checker-webpack-plugin: 6.5.3(eslint@9.39.5(supports-color@5.5.0))(typescript@6.0.3)(webpack@4.47.0(supports-color@5.5.0))
       fs-extra: 9.1.0
       glob: 7.2.3
       handlebars: 4.7.9
@@ -9518,7 +9518,7 @@ snapshots:
       util-deprecate: 1.0.2
       webpack: 4.47.0(supports-color@5.5.0)
     optionalDependencies:
-      typescript: 4.9.5
+      typescript: 6.0.3
     transitivePeerDependencies:
       - eslint
       - supports-color
@@ -9530,20 +9530,20 @@ snapshots:
     dependencies:
       core-js: 3.50.0
 
-  '@storybook/core-server@6.5.16(@storybook/builder-webpack5@6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)(uglify-js@3.19.3))(@storybook/manager-webpack5@6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)(uglify-js@3.19.3))(bluebird@3.7.2)(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)':
+  '@storybook/core-server@6.5.16(@storybook/builder-webpack5@6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)(uglify-js@3.19.3))(@storybook/manager-webpack5@6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)(uglify-js@3.19.3))(bluebird@3.7.2)(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)':
     dependencies:
       '@discoveryjs/json-ext': 0.5.7
-      '@storybook/builder-webpack4': 6.5.16(bluebird@3.7.2)(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)
-      '@storybook/core-client': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.9.5)(webpack@4.47.0(supports-color@5.5.0))
-      '@storybook/core-common': 6.5.16(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)
+      '@storybook/builder-webpack4': 6.5.16(bluebird@3.7.2)(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)
+      '@storybook/core-client': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@6.0.3)(webpack@4.47.0(supports-color@5.5.0))
+      '@storybook/core-common': 6.5.16(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)
       '@storybook/core-events': 6.5.16
       '@storybook/csf': 0.0.2--canary.4566f4d.1
       '@storybook/csf-tools': 6.5.16(supports-color@5.5.0)
-      '@storybook/manager-webpack4': 6.5.16(bluebird@3.7.2)(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)
+      '@storybook/manager-webpack4': 6.5.16(bluebird@3.7.2)(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)
       '@storybook/node-logger': 6.5.16
       '@storybook/semver': 7.3.2
       '@storybook/store': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@storybook/telemetry': 6.5.16(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)
+      '@storybook/telemetry': 6.5.16(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)
       '@types/node': 16.18.126
       '@types/node-fetch': 2.6.13
       '@types/pretty-hrtime': 1.0.3
@@ -9580,9 +9580,9 @@ snapshots:
       ws: 8.21.3
       x-default-browser: 0.4.0
     optionalDependencies:
-      '@storybook/builder-webpack5': 6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)(uglify-js@3.19.3)
-      '@storybook/manager-webpack5': 6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)(uglify-js@3.19.3)
-      typescript: 4.9.5
+      '@storybook/builder-webpack5': 6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)(uglify-js@3.19.3)
+      '@storybook/manager-webpack5': 6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)(uglify-js@3.19.3)
+      typescript: 6.0.3
     transitivePeerDependencies:
       - '@storybook/mdx2-csf'
       - bluebird
@@ -9595,17 +9595,17 @@ snapshots:
       - webpack-cli
       - webpack-command
 
-  '@storybook/core@6.5.16(@storybook/builder-webpack5@6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)(uglify-js@3.19.3))(@storybook/manager-webpack5@6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)(uglify-js@3.19.3))(bluebird@3.7.2)(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3))':
+  '@storybook/core@6.5.16(@storybook/builder-webpack5@6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)(uglify-js@3.19.3))(@storybook/manager-webpack5@6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)(uglify-js@3.19.3))(bluebird@3.7.2)(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3))':
     dependencies:
-      '@storybook/core-client': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.9.5)(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3))
-      '@storybook/core-server': 6.5.16(@storybook/builder-webpack5@6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)(uglify-js@3.19.3))(@storybook/manager-webpack5@6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)(uglify-js@3.19.3))(bluebird@3.7.2)(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)
+      '@storybook/core-client': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@6.0.3)(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3))
+      '@storybook/core-server': 6.5.16(@storybook/builder-webpack5@6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)(uglify-js@3.19.3))(@storybook/manager-webpack5@6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)(uglify-js@3.19.3))(bluebird@3.7.2)(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       webpack: 5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3)
     optionalDependencies:
-      '@storybook/builder-webpack5': 6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)(uglify-js@3.19.3)
-      '@storybook/manager-webpack5': 6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)(uglify-js@3.19.3)
-      typescript: 4.9.5
+      '@storybook/builder-webpack5': 6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)(uglify-js@3.19.3)
+      '@storybook/manager-webpack5': 6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)(uglify-js@3.19.3)
+      typescript: 6.0.3
     transitivePeerDependencies:
       - '@storybook/mdx2-csf'
       - bluebird
@@ -9688,14 +9688,14 @@ snapshots:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  '@storybook/manager-webpack4@6.5.16(bluebird@3.7.2)(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)':
+  '@storybook/manager-webpack4@6.5.16(bluebird@3.7.2)(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)':
     dependencies:
       '@babel/core': 7.29.7(supports-color@5.5.0)
       '@babel/plugin-transform-template-literals': 7.29.7(@babel/core@7.29.7(supports-color@5.5.0))
       '@babel/preset-react': 7.29.7(@babel/core@7.29.7(supports-color@5.5.0))(supports-color@5.5.0)
       '@storybook/addons': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@storybook/core-client': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.9.5)(webpack@4.47.0(supports-color@5.5.0))
-      '@storybook/core-common': 6.5.16(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)
+      '@storybook/core-client': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@6.0.3)(webpack@4.47.0(supports-color@5.5.0))
+      '@storybook/core-common': 6.5.16(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)
       '@storybook/node-logger': 6.5.16
       '@storybook/theming': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@storybook/ui': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -9712,7 +9712,7 @@ snapshots:
       fs-extra: 9.1.0
       html-webpack-plugin: 4.5.2(webpack@4.47.0(supports-color@5.5.0))
       node-fetch: 2.7.0
-      pnp-webpack-plugin: 1.6.4(typescript@4.9.5)
+      pnp-webpack-plugin: 1.6.4(typescript@6.0.3)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       read-pkg-up: 7.0.1
@@ -9728,7 +9728,7 @@ snapshots:
       webpack-dev-middleware: 3.7.3(webpack@4.47.0(supports-color@5.5.0))
       webpack-virtual-modules: 0.2.2(supports-color@5.5.0)
     optionalDependencies:
-      typescript: 4.9.5
+      typescript: 6.0.3
     transitivePeerDependencies:
       - bluebird
       - encoding
@@ -9738,14 +9738,14 @@ snapshots:
       - webpack-cli
       - webpack-command
 
-  '@storybook/manager-webpack5@6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)(uglify-js@3.19.3)':
+  '@storybook/manager-webpack5@6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)(uglify-js@3.19.3)':
     dependencies:
       '@babel/core': 7.29.7(supports-color@5.5.0)
       '@babel/plugin-transform-template-literals': 7.29.7(@babel/core@7.29.7(supports-color@5.5.0))
       '@babel/preset-react': 7.29.7(@babel/core@7.29.7(supports-color@5.5.0))(supports-color@5.5.0)
       '@storybook/addons': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
-      '@storybook/core-client': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@4.9.5)(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3))
-      '@storybook/core-common': 6.5.16(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)
+      '@storybook/core-client': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(typescript@6.0.3)(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3))
+      '@storybook/core-common': 6.5.16(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)
       '@storybook/node-logger': 6.5.16
       '@storybook/theming': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@storybook/ui': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -9775,7 +9775,7 @@ snapshots:
       webpack-dev-middleware: 4.3.0(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3))
       webpack-virtual-modules: 0.4.6
     optionalDependencies:
-      typescript: 4.9.5
+      typescript: 6.0.3
     transitivePeerDependencies:
       - '@minify-html/node'
       - '@napi-rs/image'
@@ -9847,16 +9847,16 @@ snapshots:
       unfetch: 4.2.0
       util-deprecate: 1.0.2
 
-  '@storybook/react-docgen-typescript-plugin@1.0.2-canary.6.9d540b91e815f8fc2f8829189deb00553559ff63.0(supports-color@5.5.0)(typescript@4.9.5)(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3))':
+  '@storybook/react-docgen-typescript-plugin@1.0.2-canary.6.9d540b91e815f8fc2f8829189deb00553559ff63.0(supports-color@5.5.0)(typescript@6.0.3)(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3))':
     dependencies:
       debug: 4.4.3(supports-color@5.5.0)
       endent: 2.1.0
       find-cache-dir: 3.3.2
       flat-cache: 3.2.0
       micromatch: 4.0.8
-      react-docgen-typescript: 2.4.0(typescript@4.9.5)
+      react-docgen-typescript: 2.4.0(typescript@6.0.3)
       tslib: 2.8.1
-      typescript: 4.9.5
+      typescript: 6.0.3
       webpack: 5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3)
     transitivePeerDependencies:
       - supports-color
@@ -9867,19 +9867,19 @@ snapshots:
       react-dom: 18.2.0(react@18.2.0)
       storybook: 8.6.18(prettier@3.9.9)(supports-color@5.5.0)
 
-  '@storybook/react@6.5.16(890714e7a58ca5ab760ec01eb65ff9bf)':
+  '@storybook/react@6.5.16(89f97b32f23290e871de11a923f36777)':
     dependencies:
       '@babel/preset-flow': 7.29.7(@babel/core@8.0.6)
       '@babel/preset-react': 7.29.7(@babel/core@8.0.6)(supports-color@5.5.0)
       '@pmmmwh/react-refresh-webpack-plugin': 0.5.17(@types/webpack@4.41.40)(react-refresh@0.11.0)(type-fest@0.21.3)(webpack-hot-middleware@2.26.1)(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3))
       '@storybook/addons': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@storybook/client-logger': 6.5.16
-      '@storybook/core': 6.5.16(@storybook/builder-webpack5@6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)(uglify-js@3.19.3))(@storybook/manager-webpack5@6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)(uglify-js@3.19.3))(bluebird@3.7.2)(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3))
-      '@storybook/core-common': 6.5.16(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)
+      '@storybook/core': 6.5.16(@storybook/builder-webpack5@6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)(uglify-js@3.19.3))(@storybook/manager-webpack5@6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)(uglify-js@3.19.3))(bluebird@3.7.2)(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3))
+      '@storybook/core-common': 6.5.16(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)
       '@storybook/csf': 0.0.2--canary.4566f4d.1
       '@storybook/docs-tools': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)
       '@storybook/node-logger': 6.5.16
-      '@storybook/react-docgen-typescript-plugin': 1.0.2-canary.6.9d540b91e815f8fc2f8829189deb00553559ff63.0(supports-color@5.5.0)(typescript@4.9.5)(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3))
+      '@storybook/react-docgen-typescript-plugin': 1.0.2-canary.6.9d540b91e815f8fc2f8829189deb00553559ff63.0(supports-color@5.5.0)(typescript@6.0.3)(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3))
       '@storybook/semver': 7.3.2
       '@storybook/store': 6.5.16(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@types/estree': 0.0.51
@@ -9909,11 +9909,11 @@ snapshots:
       webpack: 5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3)
     optionalDependencies:
       '@babel/core': 8.0.6
-      '@storybook/builder-webpack4': 6.5.16(bluebird@3.7.2)(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)
-      '@storybook/builder-webpack5': 6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)(uglify-js@3.19.3)
-      '@storybook/manager-webpack4': 6.5.16(bluebird@3.7.2)(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)
-      '@storybook/manager-webpack5': 6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)(uglify-js@3.19.3)
-      typescript: 4.9.5
+      '@storybook/builder-webpack4': 6.5.16(bluebird@3.7.2)(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)
+      '@storybook/builder-webpack5': 6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)(uglify-js@3.19.3)
+      '@storybook/manager-webpack4': 6.5.16(bluebird@3.7.2)(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)
+      '@storybook/manager-webpack5': 6.5.16(clean-css@5.3.3)(esbuild@0.25.12)(eslint@9.39.5(supports-color@5.5.0))(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)(uglify-js@3.19.3)
+      typescript: 6.0.3
     transitivePeerDependencies:
       - '@minify-html/node'
       - '@napi-rs/image'
@@ -9983,10 +9983,10 @@ snapshots:
       ts-dedent: 2.3.0
       util-deprecate: 1.0.2
 
-  '@storybook/telemetry@6.5.16(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)':
+  '@storybook/telemetry@6.5.16(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)':
     dependencies:
       '@storybook/client-logger': 6.5.16
-      '@storybook/core-common': 6.5.16(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@4.9.5)
+      '@storybook/core-common': 6.5.16(eslint@9.39.5(supports-color@5.5.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)(supports-color@5.5.0)(typescript@6.0.3)
       chalk: 4.1.2
       core-js: 3.50.0
       detect-package-manager: 2.0.1
@@ -10252,40 +10252,40 @@ snapshots:
     dependencies:
       '@types/yargs-parser': 21.0.3
 
-  '@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5))(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)':
+  '@typescript-eslint/eslint-plugin@8.70.1(@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3))(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)':
     dependencies:
       '@eslint-community/regexpp': 4.12.2
-      '@typescript-eslint/parser': 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)
+      '@typescript-eslint/parser': 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)
       '@typescript-eslint/scope-manager': 8.70.1
-      '@typescript-eslint/type-utils': 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)
-      '@typescript-eslint/utils': 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)
+      '@typescript-eslint/type-utils': 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)
+      '@typescript-eslint/utils': 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)
       '@typescript-eslint/visitor-keys': 8.70.1
       eslint: 9.39.5(supports-color@5.5.0)
       ignore: 7.0.10
       natural-compare: 1.4.0
-      ts-api-utils: 2.5.0(typescript@4.9.5)
-      typescript: 4.9.5
+      ts-api-utils: 2.5.0(typescript@6.0.3)
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)':
+  '@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)':
     dependencies:
       '@typescript-eslint/scope-manager': 8.70.1
       '@typescript-eslint/types': 8.70.1
-      '@typescript-eslint/typescript-estree': 8.70.1(supports-color@5.5.0)(typescript@4.9.5)
+      '@typescript-eslint/typescript-estree': 8.70.1(supports-color@5.5.0)(typescript@6.0.3)
       '@typescript-eslint/visitor-keys': 8.70.1
       debug: 4.4.3(supports-color@5.5.0)
       eslint: 9.39.5(supports-color@5.5.0)
-      typescript: 4.9.5
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/project-service@8.70.1(supports-color@5.5.0)(typescript@4.9.5)':
+  '@typescript-eslint/project-service@8.70.1(supports-color@5.5.0)(typescript@6.0.3)':
     dependencies:
-      '@typescript-eslint/tsconfig-utils': 8.70.1(typescript@4.9.5)
+      '@typescript-eslint/tsconfig-utils': 8.70.1(typescript@6.0.3)
       '@typescript-eslint/types': 8.70.1
       debug: 4.4.3(supports-color@5.5.0)
-      typescript: 4.9.5
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
@@ -10294,47 +10294,47 @@ snapshots:
       '@typescript-eslint/types': 8.70.1
       '@typescript-eslint/visitor-keys': 8.70.1
 
-  '@typescript-eslint/tsconfig-utils@8.70.1(typescript@4.9.5)':
+  '@typescript-eslint/tsconfig-utils@8.70.1(typescript@6.0.3)':
     dependencies:
-      typescript: 4.9.5
+      typescript: 6.0.3
 
-  '@typescript-eslint/type-utils@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)':
+  '@typescript-eslint/type-utils@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)':
     dependencies:
       '@typescript-eslint/types': 8.70.1
-      '@typescript-eslint/typescript-estree': 8.70.1(supports-color@5.5.0)(typescript@4.9.5)
-      '@typescript-eslint/utils': 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)
+      '@typescript-eslint/typescript-estree': 8.70.1(supports-color@5.5.0)(typescript@6.0.3)
+      '@typescript-eslint/utils': 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)
       debug: 4.4.3(supports-color@5.5.0)
       eslint: 9.39.5(supports-color@5.5.0)
-      ts-api-utils: 2.5.0(typescript@4.9.5)
-      typescript: 4.9.5
+      ts-api-utils: 2.5.0(typescript@6.0.3)
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
   '@typescript-eslint/types@8.70.1': {}
 
-  '@typescript-eslint/typescript-estree@8.70.1(supports-color@5.5.0)(typescript@4.9.5)':
+  '@typescript-eslint/typescript-estree@8.70.1(supports-color@5.5.0)(typescript@6.0.3)':
     dependencies:
-      '@typescript-eslint/project-service': 8.70.1(supports-color@5.5.0)(typescript@4.9.5)
-      '@typescript-eslint/tsconfig-utils': 8.70.1(typescript@4.9.5)
+      '@typescript-eslint/project-service': 8.70.1(supports-color@5.5.0)(typescript@6.0.3)
+      '@typescript-eslint/tsconfig-utils': 8.70.1(typescript@6.0.3)
       '@typescript-eslint/types': 8.70.1
       '@typescript-eslint/visitor-keys': 8.70.1
       debug: 4.4.3(supports-color@5.5.0)
       minimatch: 10.2.6
       semver: 7.8.5
       tinyglobby: 0.2.17
-      ts-api-utils: 2.5.0(typescript@4.9.5)
-      typescript: 4.9.5
+      ts-api-utils: 2.5.0(typescript@6.0.3)
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
-  '@typescript-eslint/utils@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)':
+  '@typescript-eslint/utils@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)':
     dependencies:
       '@eslint-community/eslint-utils': 4.10.1(eslint@9.39.5(supports-color@5.5.0))
       '@typescript-eslint/scope-manager': 8.70.1
       '@typescript-eslint/types': 8.70.1
-      '@typescript-eslint/typescript-estree': 8.70.1(supports-color@5.5.0)(typescript@4.9.5)
+      '@typescript-eslint/typescript-estree': 8.70.1(supports-color@5.5.0)(typescript@6.0.3)
       eslint: 9.39.5(supports-color@5.5.0)
-      typescript: 4.9.5
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
@@ -12156,20 +12156,20 @@ snapshots:
     optionalDependencies:
       source-map: 0.6.1
 
-  eslint-config-next@16.3.6(@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5))(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5):
+  eslint-config-next@16.3.6(@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3))(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3):
     dependencies:
       '@next/eslint-plugin-next': 16.3.6(eslint@9.39.5(supports-color@5.5.0))
       eslint: 9.39.5(supports-color@5.5.0)
       eslint-import-resolver-node: 0.3.10(supports-color@5.5.0)
       eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)
       eslint-plugin-jsx-a11y: 6.10.2(eslint@9.39.5(supports-color@5.5.0))
       eslint-plugin-react: 7.37.5(eslint@9.39.5(supports-color@5.5.0))
       eslint-plugin-react-hooks: 7.1.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)
       globals: 16.4.0
-      typescript-eslint: 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)
+      typescript-eslint: 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)
     optionalDependencies:
-      typescript: 4.9.5
+      typescript: 6.0.3
     transitivePeerDependencies:
       - '@typescript-eslint/parser'
       - eslint-import-resolver-webpack
@@ -12199,22 +12199,22 @@ snapshots:
       tinyglobby: 0.2.17
       unrs-resolver: 1.12.2
     optionalDependencies:
-      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)
+      eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-module-utils@2.14.0(@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5))(eslint-import-resolver-node@0.3.10(supports-color@5.5.0))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0):
+  eslint-module-utils@2.14.0(@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3))(eslint-import-resolver-node@0.3.10(supports-color@5.5.0))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0):
     dependencies:
       debug: 3.2.7(supports-color@5.5.0)
     optionalDependencies:
-      '@typescript-eslint/parser': 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)
+      '@typescript-eslint/parser': 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)
       eslint: 9.39.5(supports-color@5.5.0)
       eslint-import-resolver-node: 0.3.10(supports-color@5.5.0)
       eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import@2.32.0)(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)
     transitivePeerDependencies:
       - supports-color
 
-  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0):
+  eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0):
     dependencies:
       '@rtsao/scc': 1.1.0
       array-includes: 3.2.0
@@ -12225,7 +12225,7 @@ snapshots:
       doctrine: 2.1.0
       eslint: 9.39.5(supports-color@5.5.0)
       eslint-import-resolver-node: 0.3.10(supports-color@5.5.0)
-      eslint-module-utils: 2.14.0(@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5))(eslint-import-resolver-node@0.3.10(supports-color@5.5.0))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)
+      eslint-module-utils: 2.14.0(@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3))(eslint-import-resolver-node@0.3.10(supports-color@5.5.0))(eslint-import-resolver-typescript@3.10.1)(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)
       hasown: 2.0.4
       is-core-module: 2.17.0
       is-glob: 4.0.3
@@ -12237,7 +12237,7 @@ snapshots:
       string.prototype.trimend: 1.0.10
       tsconfig-paths: 3.15.0
     optionalDependencies:
-      '@typescript-eslint/parser': 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)
+      '@typescript-eslint/parser': 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
       - eslint-import-resolver-webpack
@@ -12304,10 +12304,10 @@ snapshots:
       string.prototype.matchall: 4.1.0
       string.prototype.repeat: 1.0.0
 
-  eslint-plugin-storybook@10.6.0(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5):
+  eslint-plugin-storybook@10.6.0(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3):
     dependencies:
       '@typescript-eslint/types': 8.70.1
-      '@typescript-eslint/utils': 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)
+      '@typescript-eslint/utils': 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)
       eslint: 9.39.5(supports-color@5.5.0)
     transitivePeerDependencies:
       - supports-color
@@ -12686,7 +12686,7 @@ snapshots:
       cross-spawn: 7.0.6
       signal-exit: 3.0.7
 
-  fork-ts-checker-webpack-plugin@4.1.6(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)(webpack@4.47.0(supports-color@5.5.0)):
+  fork-ts-checker-webpack-plugin@4.1.6(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)(webpack@4.47.0(supports-color@5.5.0)):
     dependencies:
       '@babel/code-frame': 7.29.7
       chalk: 2.4.2
@@ -12694,7 +12694,7 @@ snapshots:
       minimatch: 3.1.5
       semver: 5.7.2
       tapable: 1.1.3
-      typescript: 4.9.5
+      typescript: 6.0.3
       webpack: 4.47.0(supports-color@5.5.0)
       worker-rpc: 0.1.1
     optionalDependencies:
@@ -12702,7 +12702,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  fork-ts-checker-webpack-plugin@6.5.3(eslint@9.39.5(supports-color@5.5.0))(typescript@4.9.5)(webpack@4.47.0(supports-color@5.5.0)):
+  fork-ts-checker-webpack-plugin@6.5.3(eslint@9.39.5(supports-color@5.5.0))(typescript@6.0.3)(webpack@4.47.0(supports-color@5.5.0)):
     dependencies:
       '@babel/code-frame': 7.29.7
       '@types/json-schema': 7.0.15
@@ -12717,12 +12717,12 @@ snapshots:
       schema-utils: 2.7.0
       semver: 7.8.5
       tapable: 1.1.3
-      typescript: 4.9.5
+      typescript: 6.0.3
       webpack: 4.47.0(supports-color@5.5.0)
     optionalDependencies:
       eslint: 9.39.5(supports-color@5.5.0)
 
-  fork-ts-checker-webpack-plugin@6.5.3(eslint@9.39.5(supports-color@5.5.0))(typescript@4.9.5)(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3)):
+  fork-ts-checker-webpack-plugin@6.5.3(eslint@9.39.5(supports-color@5.5.0))(typescript@6.0.3)(webpack@5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3)):
     dependencies:
       '@babel/code-frame': 7.29.7
       '@types/json-schema': 7.0.15
@@ -12737,7 +12737,7 @@ snapshots:
       schema-utils: 2.7.0
       semver: 7.8.5
       tapable: 1.1.3
-      typescript: 4.9.5
+      typescript: 6.0.3
       webpack: 5.111.1(clean-css@5.3.3)(esbuild@0.25.12)(html-minifier-terser@6.1.0)(lightningcss@1.33.0)(postcss@7.0.39)(uglify-js@3.19.3)
     optionalDependencies:
       eslint: 9.39.5(supports-color@5.5.0)
@@ -14616,9 +14616,9 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  pnp-webpack-plugin@1.6.4(typescript@4.9.5):
+  pnp-webpack-plugin@1.6.4(typescript@6.0.3):
     dependencies:
-      ts-pnp: 1.2.0(typescript@4.9.5)
+      ts-pnp: 1.2.0(typescript@6.0.3)
     transitivePeerDependencies:
       - typescript
 
@@ -14863,9 +14863,9 @@ snapshots:
       schema-utils: 3.3.0
       webpack: 4.47.0(supports-color@5.5.0)
 
-  react-docgen-typescript@2.4.0(typescript@4.9.5):
+  react-docgen-typescript@2.4.0(typescript@6.0.3):
     dependencies:
-      typescript: 4.9.5
+      typescript: 6.0.3
 
   react-docgen@5.4.3(supports-color@5.5.0):
     dependencies:
@@ -15876,19 +15876,19 @@ snapshots:
 
   trough@1.0.5: {}
 
-  ts-api-utils@2.5.0(typescript@4.9.5):
+  ts-api-utils@2.5.0(typescript@6.0.3):
     dependencies:
-      typescript: 4.9.5
+      typescript: 6.0.3
 
   ts-dedent@2.3.0: {}
 
-  ts-pnp@1.2.0(typescript@4.9.5):
+  ts-pnp@1.2.0(typescript@6.0.3):
     optionalDependencies:
-      typescript: 4.9.5
+      typescript: 6.0.3
 
-  tsconfck@3.1.6(typescript@4.9.5):
+  tsconfck@3.1.6(typescript@6.0.3):
     optionalDependencies:
-      typescript: 4.9.5
+      typescript: 6.0.3
 
   tsconfig-paths@3.15.0:
     dependencies:
@@ -15952,18 +15952,18 @@ snapshots:
 
   typedarray@0.0.6: {}
 
-  typescript-eslint@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5):
+  typescript-eslint@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3):
     dependencies:
-      '@typescript-eslint/eslint-plugin': 8.70.1(@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5))(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)
-      '@typescript-eslint/parser': 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)
-      '@typescript-eslint/typescript-estree': 8.70.1(supports-color@5.5.0)(typescript@4.9.5)
-      '@typescript-eslint/utils': 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@4.9.5)
+      '@typescript-eslint/eslint-plugin': 8.70.1(@typescript-eslint/parser@8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3))(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)
+      '@typescript-eslint/parser': 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)
+      '@typescript-eslint/typescript-estree': 8.70.1(supports-color@5.5.0)(typescript@6.0.3)
+      '@typescript-eslint/utils': 8.70.1(eslint@9.39.5(supports-color@5.5.0))(supports-color@5.5.0)(typescript@6.0.3)
       eslint: 9.39.5(supports-color@5.5.0)
-      typescript: 4.9.5
+      typescript: 6.0.3
     transitivePeerDependencies:
       - supports-color
 
-  typescript@4.9.5: {}
+  typescript@6.0.3: {}
 
   uglify-js@3.19.3:
     optional: true
@@ -16196,11 +16196,11 @@ snapshots:
       unist-util-stringify-position: 2.0.3
       vfile-message: 2.0.4
 
-  vite-tsconfig-paths@6.1.1(supports-color@5.5.0)(typescript@4.9.5)(vite@8.3.0(@types/node@18.11.18)(esbuild@0.25.12)(terser@5.51.2)(yaml@2.9.1)):
+  vite-tsconfig-paths@6.1.1(supports-color@5.5.0)(typescript@6.0.3)(vite@8.3.0(@types/node@18.11.18)(esbuild@0.25.12)(terser@5.51.2)(yaml@2.9.1)):
     dependencies:
       debug: 4.4.3(supports-color@5.5.0)
       globrex: 0.1.2
-      tsconfck: 3.1.6(typescript@4.9.5)
+      tsconfck: 3.1.6(typescript@6.0.3)
       vite: 8.3.0(@types/node@18.11.18)(esbuild@0.25.12)(terser@5.51.2)(yaml@2.9.1)
     transitivePeerDependencies:
       - supports-color
