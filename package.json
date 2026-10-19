@@ -37,7 +37,7 @@
     "@babel/preset-typescript": "8.0.1",
     "@eslint/compat": "^2.1.1",
     "@eslint/eslintrc": "3.3.7",
-    "@happy-dom/global-registrator": "^20.14.6",
+    "@happy-dom/global-registrator": "^21.0.3",
     "@storybook/addon-docs": "10.6.2",
     "@storybook/nextjs-vite": "10.6.2",
     "@storybook/react": "10.6.0",
